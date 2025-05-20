@@ -1,0 +1,54 @@
+[
+  {
+    "ContainingType": "Questao5.Infrastructure.Services.Controllers.SaldoContaController",
+    "Method": "GetSaldoConta",
+    "RelativePath": "{idConta}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idConta",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Questao5.Application.Queries.Responses.Saldo.SaldoContaQueryOutput",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Questao5.Infrastructure.Services.Controllers.MovimentacaoContaController",
+    "Method": "MovimentarConta",
+    "RelativePath": "MovimentacaoConta/movimentar_conta",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "input",
+        "Type": "Questao5.Application.Commands.Requests.Movimentacao.MovimentoCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Questao5.Application.Commands.Responses.Movimentacao.MovimentoOutput",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  }
+]
